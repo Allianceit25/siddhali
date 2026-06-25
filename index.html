@@ -3,422 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Siddhali Kale | Student Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
+<title>🌸 Siddhali Kale | My Personal Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#f4f9ff;
-color:#333;
-}
-
-header{
-background:linear-gradient(90deg,#ff4fa3,#7b68ee);
-color:white;
-padding:20px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
-}
-
-header h1{
-font-size:42px;
-}
-
-header p{
-font-size:18px;
-margin-top:10px;
-}
-
-nav{
-background:white;
-display:flex;
-justify-content:center;
-padding:15px;
-gap:30px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-nav a{
-text-decoration:none;
-color:#444;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#ff1493;
-}
-
-.hero{
-
-padding:60px 20px;
-text-align:center;
-background:linear-gradient(#e8f6ff,#ffffff);
-
-}
-
-.avatar{
-
-width:180px;
-height:180px;
-border-radius:50%;
-background:#ffd700;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:90px;
-margin:auto;
-box-shadow:0 10px 25px rgba(0,0,0,.2);
-
-}
-
-.hero h2{
-margin-top:25px;
-font-size:38px;
-color:#ff1493;
-}
-
-.hero h3{
-margin-top:10px;
-color:#555;
-}
-
-.container{
-
-width:90%;
-max-width:1200px;
-margin:auto;
-padding:40px 0;
-
-}
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-
-}
-
-.card{
-
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,.1);
-transition:.4s;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
-}
-
-.card h2{
-
-color:#7b68ee;
-margin-bottom:15px;
-
-}
-
-.card ul{
-
-padding-left:20px;
-line-height:1.9;
-
-}
-
-button{
-
-margin-top:25px;
-padding:15px 35px;
-background:#ff1493;
-color:white;
-border:none;
-border-radius:40px;
-font-size:18px;
-cursor:pointer;
-
-}
-
-button:hover{
-
-background:#ff69b4;
-
-}
-
-#message{
-
-margin-top:20px;
-font-size:22px;
-font-weight:bold;
-color:#0066cc;
-
-}
-
-footer{
-
-background:#333;
-color:white;
-padding:25px;
-text-align:center;
-margin-top:40px;
-
-}
-
-.time{
-
-font-size:18px;
-margin-top:10px;
-
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:linear-gradient(135deg,#dff6ff,#fff4d6,#ffe6f2);color:#333}
+header{background:linear-gradient(90deg,#ff4fa3,#6a5acd);color:#fff;padding:25px;text-align:center;position:sticky;top:0}
+nav{margin-top:15px}
+nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:600}
+.hero{text-align:center;padding:50px 20px}
+.avatar{width:180px;height:180px;border-radius:50%;background:#ffd54f;margin:auto;display:flex;justify-content:center;align-items:center;font-size:90px;box-shadow:0 8px 20px rgba(0,0,0,.2);animation:bounce 3s infinite}
+@keyframes bounce{50%{transform:translateY(-10px)}}
+.hero h2{font-size:42px;color:#e91e63;margin-top:20px}
+button{padding:14px 30px;border:none;border-radius:30px;background:#e91e63;color:#fff;font-size:18px;cursor:pointer;margin-top:20px}
+button:hover{background:#ff5ea8}
+#msg{margin-top:20px;font-size:22px;color:#1565c0;font-weight:bold}
+.container{max-width:1200px;margin:auto;padding:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border-radius:18px;padding:22px;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.card h3{color:#6a5acd;margin-bottom:10px}
+.quote{background:linear-gradient(90deg,#6a5acd,#ff4fa3);color:#fff;padding:40px;text-align:center;font-size:26px;margin-top:35px}
+footer{background:#222;color:#fff;text-align:center;padding:25px;margin-top:30px}
+#clock{margin-top:8px}
+.star{position:fixed;top:-40px;font-size:18px;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(110vh)}}
 </style>
-
 </head>
-
 <body>
 
 <header>
-
 <h1>🌸 Siddhali Kale 🌸</h1>
-
-<p>Welcome to My Personal School Website</p>
-
-<div class="time" id="clock"></div>
-
+<p>Welcome to My Personal Student Website</p>
+<div id="clock"></div>
+<nav>
+<a href="#about">About</a>
+<a href="#school">School</a>
+<a href="#achievements">Achievements</a>
+<a href="#football">Football</a>
+<a href="#computer">Learning with Dad</a>
+<a href="#dream">Dream</a>
+</nav>
 </header>
 
-<nav>
-
-<a href="#">🏠 Home</a>
-<a href="#">👧 About Me</a>
-<a href="#">📚 Subjects</a>
-<a href="#">🏫 School</a>
-<a href="#">🏆 Achievements</a>
-<a href="#">❤️ Family</a>
-
-</nav>
-
 <section class="hero">
-
-<div class="avatar">
-👧
-</div>
-
-<h2>Hello Everyone!</h2>
-
-<h3>I am Siddhali Kale</h3>
-
-<h3>Grade 3 Student</h3>
-
-<h3>🏫 Hansraj Morarji Public School</h3>
-
-<button onclick="wish()">
-Click for Today's Motivation ⭐
-</button>
-
-<div id="message"></div>
-
+<div class="avatar">👧</div>
+<h2>Hello! I'm Siddhali</h2>
+<p><b>Grade 3 Student | ICSE Board</b></p>
+<p>🏫 Hansraj Morarji Public School</p>
+<button onclick="motivate()">🌈 Inspire Me</button>
+<div id="msg"></div>
 </section>
 
 <div class="container">
+<div class="grid">
 
-<div class="cards">
+<div class="card" id="about">
+<h3>👧 About Me</h3>
+<p>My name is <b>Siddhali Kale</b>. I study in Grade 3 under the ICSE Board. I love learning, reading books, drawing, playing football and spending time with my family. Every day I try to learn something new and become a better person.</p>
+</div>
 
-<div class="card">
-
-<h2>👧 About Me</h2>
-
-<p>
-
-My name is <b>Siddhali Kale</b>.
-
-I study in <b>Grade 3</b>.
-
-I love learning new things every day.
-
-I enjoy reading books, drawing pictures, dancing, singing, and spending time with my family.
-
-</p>
-
+<div class="card" id="school">
+<h3>🏫 My School</h3>
+<p><b>School:</b> Hansraj Morarji Public School</p>
+<p><b>Board:</b> ICSE</p>
+<p><b>Class:</b> Grade 3</p>
+<p>I enjoy learning from my teachers and making wonderful memories with my friends.</p>
 </div>
 
 <div class="card">
-
-<h2>🏫 My School</h2>
-
-<p>
-
-School Name:<br>
-
-<b>Hansraj Morarji Public School</b>
-
-</p>
-
-<br>
-
-<p>
-
-Class:
-
-<b>Grade 3</b>
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>📚 My Favourite Subjects</h2>
-
+<h3>📚 Favourite Subjects</h3>
 <ul>
-
 <li>📖 English</li>
-
 <li>🧮 Mathematics</li>
-
-<li>🌍 Environmental Studies</li>
-
+<li>🌍 EVS</li>
 <li>💻 Computer</li>
-
 <li>🎨 Art & Craft</li>
-
 </ul>
-
 </div>
 
-<div class="card">
+<div class="card" id="achievements">
+<h3>🏆 Achievements</h3>
+<p>🥇 I secured <b>1st Rank in the Olympiad</b>. This achievement motivates me to continue learning with confidence and determination.</p>
+</div>
 
-<h2>🎨 My Hobbies</h2>
+<div class="card" id="football">
+<h3>⚽ Football</h3>
+<p>Football is my favourite sport. It teaches me teamwork, discipline, confidence, fitness and leadership. I love playing with my friends.</p>
+</div>
 
+<div class="card" id="computer">
+<h3>💻 Learning with Dad</h3>
+<p>My father teaches me computers and technology.</p>
 <ul>
-
-<li>Drawing</li>
-
-<li>Reading Story Books</li>
-
-<li>Playing Games</li>
-
-<li>Dancing</li>
-
-<li>Learning New Things</li>
-
+<li>💻 Computer Basics</li>
+<li>⌨️ Typing</li>
+<li>🌐 Internet Safety</li>
+<li>👩‍💻 HTML & Coding</li>
+<li>🤖 Artificial Intelligence</li>
+<li>🎨 Paint & Creativity</li>
 </ul>
-
 </div>
 
 <div class="card">
-
-<h2>🏆 My Goals</h2>
-
+<h3>🎨 My Hobbies</h3>
 <ul>
-
-<li>Study every day</li>
-
-<li>Respect teachers</li>
-
-<li>Help others</li>
-
-<li>Become successful</li>
-
-<li>Make my parents proud</li>
-
+<li>⚽ Football</li>
+<li>🎨 Drawing</li>
+<li>📚 Reading</li>
+<li>🎵 Music</li>
+<li>💻 Coding</li>
+<li>🌈 Creative Activities</li>
 </ul>
+</div>
 
+<div class="card" id="dream">
+<h3>🌟 My Dream</h3>
+<p>I want to become an intelligent, kind and confident person, make my parents proud, continue learning every day and help others.</p>
 </div>
 
 <div class="card">
-
-<h2>❤️ Dad's Message</h2>
-
-<p>
-
-Dear Siddhali,
-
-Always believe in yourself.
-
-Dream big.
-
-Study well.
-
-Be kind.
-
-Keep smiling.
-
-Dad loves you forever.
-
-❤️
-
-</p>
-
+<h3>❤️ Message from Dad</h3>
+<p>Dear Siddhali,<br><br>
+You are my little superstar. I am very proud of your Olympiad achievement, your love for football and your curiosity to learn computers. Keep smiling, keep learning and always believe in yourself. I will always support your dreams.<br><br>
+❤️ Love You Forever ❤️<br><b>— Dad</b></p>
 </div>
 
 </div>
+</div>
 
+<div class="quote">
+✨ "Dream Big • Learn Every Day • Be Kind • Never Give Up." ✨
 </div>
 
 <footer>
-
-Made with ❤️ by Dad
-
-<br><br>
-
-© 2026 Siddhali Kale
-
+<h2>🌸 Siddhali Kale 🌸</h2>
+<p>Grade 3 • ICSE Board</p>
+<p>Hansraj Morarji Public School</p>
+<p>Made with ❤️ by Dad</p>
+<p>© 2026 Siddhali's World</p>
 </footer>
 
 <script>
-
-function wish(){
-
-var msg=[
-
+const quotes=[
 "🌈 Believe in yourself!",
-
-"⭐ You are brilliant!",
-
+"🏆 Champions never give up!",
 "📚 Learning is fun!",
-
-"🏆 You can achieve anything!",
-
-"❤️ Dad is proud of you!",
-
-"😊 Keep smiling every day!"
-
+"⚽ Keep practicing football!",
+"💻 Keep learning computers!",
+"❤️ Dad is always proud of you!"
 ];
-
-document.getElementById("message").innerHTML=
-
-msg[Math.floor(Math.random()*msg.length)];
-
+function motivate(){
+document.getElementById("msg").innerHTML=quotes[Math.floor(Math.random()*quotes.length)];
 }
-
-function updateClock(){
-
-const now=new Date();
-
-document.getElementById("clock").innerHTML=
-
-"📅 "+now.toDateString()+" | 🕒 "+now.toLocaleTimeString();
-
+function clock(){
+const d=new Date();
+document.getElementById("clock").innerHTML="📅 "+d.toDateString()+" | 🕒 "+d.toLocaleTimeString();
 }
-
-setInterval(updateClock,1000);
-
-updateClock();
-
+setInterval(clock,1000);clock();
+for(let i=0;i<35;i++){
+let s=document.createElement("div");
+s.className="star";
+s.innerHTML="⭐";
+s.style.left=Math.random()*100+"vw";
+s.style.animationDuration=(5+Math.random()*8)+"s";
+s.style.animationDelay=Math.random()*5+"s";
+document.body.appendChild(s);
+}
 </script>
 
 </body>
